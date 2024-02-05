@@ -1,5 +1,7 @@
-import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
+import { refs } from './refs';
+import { fetchImg } from './fetch';
+import { makeGalleryItem } from './makeGallery';
+import { onError } from './onError';
+import { onFormSubmit } from './onFormSubmit';
 
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
+refs.form.addEventListener('submit', onFormSubmit);
