@@ -11,5 +11,5 @@ export function onFormSubmit(event) {
   fetchImg(userSearch)
     .then(makeGalleryItem)
     .catch(onError)
-    .finally(refs.form.requestFullscreen());
+    .finally(refs.form.reset());
 }

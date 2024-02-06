@@ -23,3 +23,74 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.section-form {
+  margin: 30px 450px;
+}
+
+.gallery {
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 24px auto;
+  gap: 24px;
+  justify-content: center;
+}
+
+.gallery-item {
+  list-style: none;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  display: block;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-image:hover {
+  border: 2px solid blue;
+  transform: scale(1.04);
+}
+
+.modal-img {
+  max-width: 1112px;
+  max-height: 640px;
+}
+button {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  margin-top: 8px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6c8cff;
+}
+
+input {
+  width: 360px;
+  height: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  color: #2e2f42;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding-left: 16px;
+}
+
+input:hover {
+  border: 1px solid #000;
+}
