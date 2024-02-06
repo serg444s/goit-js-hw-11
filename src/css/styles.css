@@ -42,8 +42,8 @@
 }
 
 .gallery-image {
-  width: 360px;
-  height: 200px;
+  width: 250px;
+  height: 150px;
   display: block;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -58,6 +58,7 @@
   max-width: 1112px;
   max-height: 640px;
 }
+
 button {
   font-family: Montserrat;
   font-size: 16px;

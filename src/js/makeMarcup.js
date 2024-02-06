@@ -1,9 +1,13 @@
 export function makeMarcup(image) {
   return `<li class="gallery-item">
   
+  <div class="gallery">
+
   <a class="gallery-link" href="${image.largeImageURL}">
     <img class="gallery-image" src="${image.webformatURL}" alt="${image.tags}" />
   </a>
+
+</div>
 
   <div class="list-text">
 
