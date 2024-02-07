@@ -2,8 +2,12 @@ import { refs } from './refs';
 import { onError } from './onError';
 
 export function fetchImg(input) {
-  const URL = `https://pixabay.com/api/?key=42220995-e7901b62efa710cae16c4a0a7&q=${input}&image_type=photo&orientation=horizontal&safesearch=true`;
+  const API_KEY = '42220995-e7901b62efa710cae16c4a0a7';
+  const BASE_URL = 'https://pixabay.com/api/';
+  const parameters = `q=${input}&image_type=photo&orientation=horizontal&safesearch=true`;
+  const URL = `${BASE_URL}?key=${API_KEY}&${parameters}`;
   return fetch(URL).then(response => {
+    console.log(response);
     if (!response.ok) {
       throw new Error(response.status);
     }
