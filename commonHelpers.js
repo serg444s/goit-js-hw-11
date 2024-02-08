@@ -13,5 +13,5 @@ import{i as c,S as u}from"./assets/vendor-5b791d57.js";(function(){const o=docum
             <div class="modal-element"><p>Comments</p><span>${t.comments}</span></div>
             <div class="modal-element"><p>Downloads</p><span>${t.downloads}</span></div>
         </div>
-      </li>`}function p(t){const o=t.hits.map(f).join("");t.hits.length?(n.galleryList.innerHTML=o,new u(".gallery a",{captionsData:"alt",captionPosition:"bottom",captionDelay:250}).refresh()):l()}function y(t){n.loader.removeAttribute("hidden"),t.preventDefault();const o=t.currentTarget.elements.input.value.trim();d(o).then(p).catch(l).finally(n.form.reset()),n.loader.setAttribute("hidden",!0)}n.form.addEventListener("submit",y);
+      </li>`}function p(t){const o=t.hits.map(f).join("");t.hits.length?(n.galleryList.innerHTML=o,new u(".gallery a",{captionsData:"alt",captionPosition:"bottom",captionDelay:250}).refresh()):l()}function y(t){n.loader.removeAttribute("hidden"),t.preventDefault();const o=t.currentTarget.elements.input.value.trim();d(o).then(p).catch(l).finally(n.loader.setAttribute("hidden",!0),n.form.reset())}n.form.addEventListener("submit",y);
 //# sourceMappingURL=commonHelpers.js.map
