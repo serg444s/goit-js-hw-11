@@ -4,6 +4,7 @@ import { onError } from './onError';
 import { fetchImg } from './fetch';
 
 export function onFormSubmit(event) {
+  refs.loader.removeAttribute('hidden');
   event.preventDefault();
   const userSearch = event.currentTarget.elements.input.value.trim();
 
@@ -11,4 +12,6 @@ export function onFormSubmit(event) {
     .then(makeGalleryItem)
     .catch(onError)
     .finally(refs.form.reset());
+
+  refs.loader.setAttribute('hidden', true);
 }

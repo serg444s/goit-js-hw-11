@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section class="section-form">
-      <form action="" class="user-form">
-        <input
-          type="text"
-          class="form-input"
-          placeholder="Search images..."
-          name="input"
-          required
-        />
-        <button type="submit" class="form-button">Search</button>
-      </form>
-    </section>
+    <form class="user-form">
+      <input
+        type="text"
+        class="form-input"
+        placeholder="Search images..."
+        name="input"
+        required
+      />
+      <button type="submit" class="form-button">Search</button>
+    </form>
 
-    <section class="section-gallery"><ul class="gallery"></ul></section>
+    <span class="loader" hidden></span>
+
+    <ul class="gallery"></ul>
 
     <script type="module" src="./js/index.js"></script>
   </body>

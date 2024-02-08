@@ -3,4 +3,5 @@ export const refs = {
   formInput: document.querySelector('.form-input'),
   btn: document.querySelector('.form-button'),
   galleryList: document.querySelector('.gallery'),
+  loader: document.querySelector('.loader'),
 };
