@@ -11,7 +11,5 @@ export function onFormSubmit(event) {
   fetchImg(userSearch)
     .then(makeGalleryItem)
     .catch(onError)
-    .finally(refs.form.reset());
-
-  refs.loader.setAttribute('hidden', true);
+    .finally(refs.loader.setAttribute('hidden', true), refs.form.reset());
 }
