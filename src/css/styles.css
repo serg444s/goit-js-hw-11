@@ -153,3 +153,7 @@ span {
     transform: rotate(360deg);
   }
 }
+
+.hidden {
+  visibility: hidden;
+}
