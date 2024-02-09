@@ -1,6 +1,3 @@
-import { refs } from './refs';
-import { onError } from './onError';
-
 export function fetchImg(input) {
   const API_KEY = '42220995-e7901b62efa710cae16c4a0a7';
   const BASE_URL = 'https://pixabay.com/api/';

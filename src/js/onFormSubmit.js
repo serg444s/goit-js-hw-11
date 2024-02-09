@@ -2,14 +2,16 @@ import { refs } from './refs';
 import { makeGalleryItem } from './makeGallery';
 import { onError } from './onError';
 import { fetchImg } from './fetch';
+import { loaderOn } from './loader';
 
 export function onFormSubmit(event) {
-  refs.loader.removeAttribute('hidden');
+  loaderOn();
   event.preventDefault();
+  refs.galleryList.innerHTML = '';
   const userSearch = event.currentTarget.elements.input.value.trim();
 
   fetchImg(userSearch)
     .then(makeGalleryItem)
     .catch(onError)
-    .finally(refs.loader.setAttribute('hidden', true), refs.form.reset());
+    .finally(refs.form.reset());
 }

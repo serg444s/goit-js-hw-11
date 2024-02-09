@@ -3,6 +3,8 @@ import { makeMarcup } from './makeMarcup';
 import { onError } from './onError';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
+import { loaderOff } from './loader';
+
 
 export function makeGalleryItem(response) {
   const result = response.hits.map(makeMarcup).join('');
@@ -15,6 +17,7 @@ export function makeGalleryItem(response) {
       captionDelay: 250,
     });
     lightbox.refresh();
+    loaderOff();
   } else {
     onError();
   }
