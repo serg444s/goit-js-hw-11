@@ -61,8 +61,8 @@ li {
 }
 
 .gallery-image:hover {
-  border: 2px solid blue;
-  transform: scale(1.04);
+  border: 1px solid blue;
+  /* transform: scale(1.04); */
 }
 
 .modal-img {
